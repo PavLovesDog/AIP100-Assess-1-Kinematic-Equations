@@ -318,8 +318,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6265cfab40a7c9b49afbd68fe1caa9f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 0.15
-  jump_speed: 5.08
+  mass: 0.05
+  jump_speed: 12
   movement_speed_per_second: 3
 --- !u!212 &1216380858
 SpriteRenderer:

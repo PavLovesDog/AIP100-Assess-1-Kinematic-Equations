@@ -259,7 +259,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1044.0134, y: -435.5384}
+  m_AnchoredPosition: {x: -988.0134, y: -430.5384}
   m_SizeDelta: {x: 930.5727, y: 117.1134}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &227794567
@@ -393,7 +393,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1044, y: -306}
+  m_AnchoredPosition: {x: -988, y: -301}
   m_SizeDelta: {x: 930.56, y: 141.9702}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &305109210
@@ -527,7 +527,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1110.7601, y: -98.53589}
+  m_AnchoredPosition: {x: 1199, y: -10}
   m_SizeDelta: {x: 1244.3599, y: 79.6906}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &352181795
@@ -743,7 +743,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1110.7606, y: -178.22644}
+  m_AnchoredPosition: {x: 1199.0005, y: -89.69055}
   m_SizeDelta: {x: 1244.2705, y: 79.6906}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &601930840
@@ -885,6 +885,10 @@ MonoBehaviour:
   currentVelocity: 0
   startPosition: {x: 0, y: 0, z: 0}
   endPosition: {x: 0, y: 0, z: 0}
+  isRunning: 0
+  checkTime: 0
+  timeStart: 0
+  timeEnd: 0
 --- !u!212 &852381741
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -944,8 +948,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 852381739}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.11, y: -4.93, z: 0}
-  m_LocalScale: {x: 0.3485926, y: 0.15298659, z: 1}
+  m_LocalPosition: {x: -10.93, y: -4.95, z: 0}
+  m_LocalScale: {x: 1.0053135, y: 0.46872032, z: 1}
   m_Children:
   - {fileID: 468243886}
   m_Father: {fileID: 0}
@@ -1010,8 +1014,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1999.5013, y: 465.35}
-  m_SizeDelta: {x: 1000.9973, y: 69.3011}
+  m_AnchoredPosition: {x: -1999.5013, y: 381.61966}
+  m_SizeDelta: {x: 1000.9973, y: 236.7617}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1008598630
 MonoBehaviour:
@@ -1033,7 +1037,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Kinematic Equation: V = U + AT'
+  m_text: 'At What Speed Will The Bullet Hit?
+
+
+    Kinematic Equation: V = U + AT
+
+    Solve
+    to find Final Velocity'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1210,7 +1220,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1110.7606, y: -257.917}
+  m_AnchoredPosition: {x: 1199.0005, y: -169.3811}
   m_SizeDelta: {x: 1244.2705, y: 79.6906}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1185765240
@@ -1344,7 +1354,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1110.85, y: -18.8453}
+  m_AnchoredPosition: {x: 1199.0898, y: 69.69059}
   m_SizeDelta: {x: 1244.358, y: 79.6906}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1206406773
@@ -1521,7 +1531,7 @@ Transform:
   m_GameObject: {fileID: 1252317717}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9.977501, y: -4.9044, z: 0}
-  m_LocalScale: {x: 0.029284887, y: 2.0589142, z: 1}
+  m_LocalScale: {x: 0.029284887, y: 2.8567436, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -1603,7 +1613,7 @@ Transform:
   m_GameObject: {fileID: 1668534124}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 33.3006, y: -4.9044, z: 0}
-  m_LocalScale: {x: 0.63045084, y: 2.0589142, z: 1}
+  m_LocalScale: {x: 0.63045084, y: 2.88248, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -1799,7 +1809,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.61877, g: 0.9219275, b: 0.9716981, a: 1}
+  m_Color: {r: 0.5671057, g: 0.6630474, b: 0.6792453, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1817,8 +1827,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2026467701}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.3466, y: -4.9038, z: 0}
-  m_LocalScale: {x: 49.769413, y: 2.04947, z: 1}
+  m_LocalPosition: {x: 13.3466, y: -4.9227, z: 0}
+  m_LocalScale: {x: 49.769413, y: 2.7439754, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2

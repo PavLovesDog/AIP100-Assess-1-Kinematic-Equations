@@ -38,7 +38,7 @@ public class timer_Script_1 : MonoBehaviour
         timeText.text = "Time: " + bullet.tTime;
 
         // Level Specific Variables
-        timeTakenText.text = "Time Taken: " + bullet.timeTaken;
+        timeTakenText.text = "Time Taken: " + Mathf.Round(bullet.timeTaken * 10.0f) * 0.1f;
         cVelocityText.text = "Current Velocity: " + bullet.currentVelocity;
 
         //timerText.text = Mathf.Round(gameTimeRemaining) + " seconds untill Nightfall...";

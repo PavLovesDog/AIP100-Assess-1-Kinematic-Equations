@@ -117,7 +117,7 @@ public class bulletScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             transform.position = startPosition;
-            currentVelocity = initialVelocity;
+            currentVelocity = initialVelocity; 
             levelTime = 0;
             timeTaken = 0;
             finalVelocity = 0;

@@ -72,6 +72,7 @@ public class car_script : MonoBehaviour
                 startTime = Time.time;
                 timeCheck1 = false;
             }
+
             Vector3 carToWall = wall.position - transform.position; // track vector length
             Vector3 velocityPerSecond = carToWall.normalized * movement_speed_per_second; // determine speed in which to move towards
             Vector3 velocityThisFrame = velocityPerSecond * Time.deltaTime; // speed over frame
@@ -91,7 +92,6 @@ public class car_script : MonoBehaviour
                 totalTime = endTime - startTime;
                 timeTakeToHit.text = "Time Taken: " + Mathf.Round(totalTime * 10.0f) * 0.1f + " seconds";
                 print(totalTime);
-                //Debug.Break(); // Pause to editor
             }
             else
             {

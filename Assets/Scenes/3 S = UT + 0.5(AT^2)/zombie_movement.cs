@@ -74,8 +74,6 @@ public class zombie_movement : MonoBehaviour
     
     void Update()
     {
-        //transform.LookAt(player);
-
         // Display text & Timers
         level_time = Time.time;
         LevelTime.text = "Scene Time " + Mathf.Round(level_time * 10.0f) * 0.1f + " seconds";

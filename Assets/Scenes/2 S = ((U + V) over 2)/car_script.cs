@@ -109,6 +109,7 @@ public class car_script : MonoBehaviour
             endTime = 0;
             totalTime = 0;
             isRunning = false;
+            explosion.SetActive(false);
         }
     }
 }

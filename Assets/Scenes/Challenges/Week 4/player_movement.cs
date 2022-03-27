@@ -20,9 +20,9 @@ public class player_movement : MonoBehaviour
 
         //create vector with movement control variables
         Vector3 movement_direction = new Vector3(horizontal, vertical, 0.0f);
-        movement_direction.Normalize(); // normalize the vector
+        movement_direction.Normalize(); // normalize the vector so all directions are same
 
-        // add it to per fram vector
+        // add all movement to a 'per frame' vector to govern movement
         Vector3 move_per_frame = movement_direction * speed * Time.deltaTime;
 
         // move player
